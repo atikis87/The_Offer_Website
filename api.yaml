@@ -1,0 +1,94 @@
+openapi: "3.0.0"
+info:
+  title: Offer API
+  version: 1.0.0
+paths:
+  /offers:
+    get:
+      description: Endpoint to request broadband offers.
+      operationId: findOffers
+      parameters:
+        - name: address
+          in: query
+          description: Filters results based on what offers can be provided for the defined address.
+          required: false
+          schema:
+            type: string
+      responses:
+        200:
+          description: A list of offers including description and price.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Offer'
+              examples:
+                empty:
+                  summary: no answer
+                  value: []
+                one:
+                  summary: just one option
+                  value:
+                    - id: cba8a796-f6f7-11e9-9a90-484d7eebb040
+                      name: Blazing Fast Connection
+                      price: 3900
+                      description: The fastest internet connection ever!
+                two:
+                  summary: two offers
+                  value:
+                    - id: 1e4c27ac-f6f8-11e9-974f-484d7eebb040
+                      name: Poor Mans Connection
+                      price: 1490
+                      description: If you need internet and can not afford more..
+                    - id: cba8a796-f6f7-11e9-9a90-484d7eebb040
+                      name: Blazing Fast Connection
+                      price: 3900
+                      description: The fastest internet connection ever!
+        default:
+          description: On failure an error code and description are returned.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                invalid:
+                  summary: an invalid param value
+                  value:
+                    code: "INVALID_PARAM"
+                    description: "The value of the provided parameter 'address' is too long."
+                unknown:
+                  summary: an unknown parameter
+                  value:
+                    code: "UNKNOWN_PARAM"
+                    description: "The provided parameter 'asd' is unknown."
+
+components:
+  schemas:
+    Offer:
+      type: object
+      required:
+        - id
+        - name
+        - price
+        - description
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price:
+          type: integer
+          format: int32
+        description:
+          type: string
+    Error:
+      type: object
+      required:
+        - code
+        - description
+      properties:
+        code:
+          type: string
+        description:
+          type: string
