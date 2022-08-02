@@ -5,7 +5,7 @@
   background-size: 63px auto;
   background-position: center center;
   box-shadow: 0 0 32px #0000004d;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 12%;
   z-index: 5000000;
@@ -22,6 +22,11 @@
   color:#fff;
   background-color: #080808;
   height: 60px;
+}
+
+.site-header__start {
+  display: flex;
+  align-items: center;
 }
 
 .site-header__end {
@@ -78,9 +83,20 @@
 }
 
 .nav__item a {
+  position: relative;
+  bottom:20px;
   display: block;
-  padding: 1.5rem 1rem;
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #d7d7d7;
+  cursor:pointer;
 }
+
+.nav__item a:hover {
+  color: #fff;
+}
+
 
 .nav__toggle {
   display: none;

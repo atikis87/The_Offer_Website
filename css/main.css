@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+h1{
+  font-size: 50px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  z-index: 10;
+}
+
+.container span{
+  font-family: 'Kaushan Script', cursive;
+  color:#00a0d2;
+}
+
+.showcase-area {
+  padding: 2.5rem 0;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+
+input[type="text"] {
+    background: #fff;
+    width: 340px;
+    height:50px;
+    border: 1px solid #5bacdf;
+    outline:none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"] {
+    position: relative;
+    border-radius: 0 25px 25px 0;
+    width:150px;
+    height:50px;
+    border: 1px solid #5bacdf;
+    outline: none;
+    cursor:pointer;
+    left:-5px;
+    background: #5bacdf;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+    transform: scale(1);
+    color:#fff;
+    border: 1px solid #000;
+}
+
+.showcase-area .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+.text {
+    color: #919191;
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+  }
+
+  .person {
+    width: 123%;
+    transform: translate(15%, 25px);
+  }
+
+  .offer-container {
+    padding-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .offer-container {
+    padding-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+.offer {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2),
+    0 6px 20px 0 rgba(201, 187, 187, 0.19);
+  margin: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.offer:hover {
+  box-shadow: 0 5px 10px 0 #aaa8a8cc, 0 12px 30px 0 #c9bbbbe6;
+}
+
+.offer-name {
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+
+.offer-description {
+  font-family: "Dekko", cursive;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: grey;
+}
+
+
+.offer-name,
+.offer-description {
+  margin-bottom: 1rem;
+}
+
+.offer-price {
+  font-size: 3rem;
+  color: #5bacdf;
+}
+      
+.fa-euro-sign {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #5bacdf;
+}
+    
+.active-offer {
+  border: 2px solid #5bacdf;
+}
