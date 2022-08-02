@@ -98,8 +98,7 @@ input[type="submit"]:hover {
   text-align: center;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2),
-    0 6px 20px 0 rgba(201, 187, 187, 0.19);
+  box-shadow: 0 4px 8px 0 #aaa8a833, 0 6px 20px 0 #c9bbbb30;
   margin: 1rem;
   cursor: pointer;
   transition: box-shadow 0.4s ease;
