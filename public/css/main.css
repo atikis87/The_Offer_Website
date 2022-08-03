@@ -41,7 +41,6 @@ input[type="text"] {
 
 input[type="submit"] {
     position: relative;
-    border-radius: 0 25px 25px 0;
     width:150px;
     height:50px;
     border: 1px solid #5bacdf;
@@ -58,6 +57,39 @@ input[type="submit"]:hover {
     border: 1px solid #000;
 }
 
+
+input[type="reset"] {
+  position: relative;
+  color:#fff;
+  border-radius: 0 25px 25px 0;
+  width:150px;
+  height:50px;
+  border: 1px solid #5bacdf;
+  outline: none;
+  cursor:pointer;
+  left:-5px;
+  background: #533e99;
+}
+
+input[type="reset"]:hover {
+  background-color: #000;
+  transform: scale(1);
+  color:#fff;
+  border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .showcase-area .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -66,27 +98,27 @@ input[type="submit"]:hover {
   }
 
 .text {
-    color: #919191;
-    font-size: 1.1rem;
-    margin: 1.9rem 0 2.5rem;
-    max-width: 600px;
-    line-height: 2.3;
-  }
+  color: #919191;
+  font-size: 1.1rem;
+  margin: 1.9rem 0 2.5rem;
+  max-width: 600px;
+  line-height: 2.3;
+}
 
-  .person {
-    width: 123%;
-    transform: translate(15%, 25px);
-  }
+.person {
+  width: 123%;
+  transform: translate(15%, 25px);
+}
+/* Offers*/
+.offer-container {
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
 
-  .offer-container {
-    padding-top: 2rem;
-    flex-wrap: wrap;
-  }
-
-  .offer-container {
-    padding-top: 2rem;
-    flex-wrap: wrap;
-  }
+.offer-container {
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
 
 .offer {
   width: 300px;
@@ -136,4 +168,14 @@ input[type="submit"]:hover {
     
 .active-offer {
   border: 2px solid #5bacdf;
+}
+
+.offer-button {
+  appearance: none;
+  color: #fff;
+  background-color: #2fa0f6;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
 }
