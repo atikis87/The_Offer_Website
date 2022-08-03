@@ -1,0 +1,26 @@
+{
+  "name": "the_offer_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atikis87/The_Offer_Website.git"
+  },
+  "author": "Attila Kiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atikis87/The_Offer_Website/issues"
+  },
+  "homepage": "https://github.com/atikis87/The_Offer_Website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
