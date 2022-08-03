@@ -1,3 +1,4 @@
+@import "loader.css";
 @import "header.css";
 @import "main.css";
 @import "footer.css";
@@ -38,10 +39,16 @@ a {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: thin;
+  scrollbar-color: #2fa0f6 #0a192f;
 }
 
 body {
   font-family:"Segoe UI","Open Sans","Helvetica Neue","Arial",sans-serif;
+}
+
+h1{
+  font-size: 50px;
 }
 
 .sr-only {
