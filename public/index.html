@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offer Website Coding Challenge</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">    
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/apiHandler.js"></script>
 </head>
 <body>
   <!-- Preloader Start -->
@@ -67,6 +68,7 @@
             <input type="submit" class="submit-btn" value="Address">
             <input type="reset" class="reset-btn" value="Reset">
           </form>
+          <div id="api"></div>
       </div>
 
       <div class="right">
@@ -76,6 +78,7 @@
   </div>
   <!-- Offer Container -->
   <div class="offer-container flex">
+    <!--
     <div class="offer flex-column active-offer">
       <h3 class="offer-name">Super Fast</h3>
       <h4 class="offer-description">
@@ -104,7 +107,48 @@
       </div>
       <a href="#" class="offer-button">More</a>
     </div>
+  -->
   </div>
+  <!-- skeleton loading start-->
+  <div class="col">
+    <div class="movie--isloading">
+      <div class="loading-image"></div>
+      <div class="loading-content">
+        <div class="loading-text-container">
+          <div class="loading-main-text"></div>
+          <div class="loading-sub-text"></div>
+        </div>
+        <div class="loading-btn"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="movie--isloading">
+      <div class="loading-image"></div>
+      <div class="loading-content">
+        <div class="loading-text-container">
+          <div class="loading-main-text"></div>
+          <div class="loading-sub-text"></div>
+        </div>
+        <div class="loading-btn"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="movie--isloading">
+      <div class="loading-image"></div>
+      <div class="loading-content">
+        <div class="loading-text-container">
+          <div class="loading-main-text"></div>
+          <div class="loading-sub-text"></div>
+        </div>
+        <div class="loading-btn"></div>
+      </div>
+    </div>
+  </div>
+    <!-- skeleton loading end-->
 </main>
   <!-- Main End -->
 

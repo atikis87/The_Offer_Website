@@ -79,17 +79,6 @@ input[type="reset"]:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .showcase-area .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
