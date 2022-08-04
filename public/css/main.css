@@ -1,64 +1,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-
-.container {
+.main-container{
+  background-image:url("../assets/images/hero_background5.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
-  z-index: 10;
 }
 
-.container span{
-  font-family: 'Kaushan Script', cursive;
-  color:#00a0d2;
+@media (max-width: 799px){
+  .main-container{
+    background-image: none;
+  }
 }
 
 .showcase-area {
   padding: 2.5rem 0;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
+  
 }
+
+@media (max-width: 999px){
+  .showcase-area {
+    padding: 0;
+  }
+}
+
+.showcase-area .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.left{
+  margin:0px;
+}
+
+@media (max-width: 1250px){
+  .left{
+    position: relative;
+    left: 10%;
+  }
+}
+
+
+@media (max-width: 999px){
+  .left{
+    margin:37px;
+  }
+  
+}
+
+@media (max-width: 599px){
+  .showcase-area .container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.big-title h1{
+  font-size: 50px;
+  margin:0;
+}
+
+
+.container span {
+  font-family: 'Kaushan Script', cursive;
+  animation: glow .6s infinite alternate;
+  color:#00a0d2;
+ }
+ 
+ @keyframes glow {
+  to {
+      text-shadow: 0 0 10px #4ebeff;
+  }
+}
+.confirm_selection {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+.text {
+  font-size: 0.95rem;
+  margin: 1.4rem 0 1.5rem;
+  font-weight: 700;
+  color:#242424;
+}
+
+.person {
+  width: 100%;
+  transform: none;
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .big-title {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    margin: 1.1rem 0 1.5rem;
+  }
+}
+
 
 input{
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+
+@media screen and (max-width: 470px) {
+  input{
+    font-size: 15px;
     transition: .5s;
+  }
+}
+
+.input-address{
+  background: #fff;
+  width: 270px;
+  height:50px;
+  border: 1px solid #5bacdf;
+  outline:none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+
+@media screen and (max-width: 470px) {
+  .input-address {
+    border-radius: 25px 25px 25px 25px;
+    width:215px;
+  }
 }
 
 
-input[type="text"] {
-    background: #fff;
-    width: 340px;
-    height:50px;
-    border: 1px solid #5bacdf;
-    outline:none;
-    padding: 0 25px;
-    border-radius: 25px 0 0 25px;
-}
-
-input[type="submit"] {
-    position: relative;
-    width:150px;
-    height:50px;
-    border: 1px solid #5bacdf;
-    outline: none;
-    cursor:pointer;
-    left:-5px;
-    background: #5bacdf;
-}
-
-input[type="submit"]:hover {
-    background-color: #000;
-    transform: scale(1);
-    color:#fff;
-    border: 1px solid #000;
+@media screen and (max-width: 470px) {
+  .input-address {
+    border-radius: 25px 25px 25px 25px;
+    width:215px;
+  }
 }
 
 
-input[type="reset"] {
+.submit-btn{
+  position: relative;
+  width:150px;
+  height:50px;
+  border: 1px solid #5bacdf;
+  outline: none;
+  cursor:pointer;
+  left:-5px;
+  background: #5bacdf;
+}
+
+
+@media screen and (max-width: 1160px) {
+  .submit-btn {
+    width:135px;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  .submit-btn {
+    border-radius: 25px 0px 0px 25px;
+  }
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  transform: scale(1);
+  color:#fff;
+  border: 1px solid #000;
+}
+
+
+.reset-btn{
   position: relative;
   color:#fff;
   border-radius: 0 25px 25px 0;
@@ -67,11 +197,23 @@ input[type="reset"] {
   border: 1px solid #5bacdf;
   outline: none;
   cursor:pointer;
-  left:-5px;
+  left:-10px;
   background: #533e99;
 }
 
-input[type="reset"]:hover {
+@media screen and (max-width: 1160px) {
+  .reset-btn {
+    width:135px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .reset-btn {
+    border-radius: 0px 25px 25px 0px;
+  }
+}
+.reset-btn:hover {
   background-color: #000;
   transform: scale(1);
   color:#fff;
@@ -79,26 +221,6 @@ input[type="reset"]:hover {
 }
 
 
-.showcase-area .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-  }
-
-.text {
-  color: #919191;
-  font-size: 1.1rem;
-  margin: 1.9rem 0 2.5rem;
-  max-width: 600px;
-  line-height: 2.3;
-}
-
-.person {
-  width: 123%;
-  transform: translate(15%, 25px);
-}
-/* Offers*/
 .offer-container {
   padding-top: 2rem;
   flex-wrap: wrap;
@@ -145,7 +267,7 @@ input[type="reset"]:hover {
 }
 
 .offer-price {
-  font-size: 3rem;
+  font-size: 30px;
   color: #5bacdf;
 }
       
@@ -160,11 +282,12 @@ input[type="reset"]:hover {
 }
 
 .offer-button {
-  appearance: none;
   color: #fff;
   background-color: #2fa0f6;
   min-width: 120px;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
+  position: relative;
+  bottom: 0;
 }

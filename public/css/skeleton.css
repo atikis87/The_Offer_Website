@@ -1,5 +1,6 @@
-.col{
-    display: inline-block;
+.skeleton{
+    /*display: inline-block;*/
+    display:none;
     min-height: 1px;
     padding-right: 25px;
     padding-left: 25px;
