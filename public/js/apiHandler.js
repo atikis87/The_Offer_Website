@@ -30,35 +30,3 @@ async function getOffers() {
   }
   getOffers() 
   offersButton.addEventListener('click', getOffers);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-/*
-    <div class="offer flex-column active-offer">
-      <h3 class="offer-name">Super Fast</h3>
-      <h4 class="offer-description">
-        The fastest internet connection ever!
-      </h4>
-      <div class="offer-price-container flex">
-        <h2 class="offer-price">39.00 €</h2>
-      </div>
-      <a href="#" class="offer-button">More</a>
-    </div>
-*/

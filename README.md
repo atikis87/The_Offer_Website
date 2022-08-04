@@ -1,5 +1,3 @@
-# The_Offer_Website Coding Challenge
-
 <h1 align="center">
   Offer Website (Coding Challenge)
 </h1>
@@ -17,7 +15,7 @@ This project was created using HTML CSS and Vanilla JS. I only used framework fo
 1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
    ```sh
-   nvm install
+   npm install
    ```
 
 3. Start the development server
@@ -36,4 +34,5 @@ This project was created using HTML CSS and Vanilla JS. I only used framework fo
     3. Section 3 is the footer. I used svgs here. I had to get into these at the code level as well. I tried to make it as perfect as possible. This required a lot of collection work.
 
    ## 🚀 What I used
-   
+    For the backend part, I used express, and I installed nodemon to start the server quickly. I installed Jest for testing.I did not use a framework for the front-end part to meet the criteria.
+    I used all data separately. I put the files available to the server in public and gave the path to express.
